@@ -23,6 +23,8 @@ awk '
         state = 0;
     } else if ($0 == "1") {
         state = 1;
+    } else if ($0 == "99") {
+        state = 99;
     } else {
         state = 2;
     }
@@ -31,6 +33,10 @@ awk '
         printf "%s", $0;
     } else if (state == 1) {
         printf "#%s", $0;
+    } else if (state == 99) {
+        for (i = 1; i <= $0; ++i) {
+            printf "null\n";
+        }
     }
 }}
 END {
