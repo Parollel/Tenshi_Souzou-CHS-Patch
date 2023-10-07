@@ -35,11 +35,11 @@ awk '
         printf "#%s", $0;
     } else if (state == 99) {
         for (i = 1; i <= $0; ++i) {
-            printf "null\n";
+            printf "\nnull";
         }
     }
 }}
 END {
     printf "\n";
 }
-' | tail --lines=+2 | sd '」?#「?' ' ' | jq -R | jq -s
+' | tail --lines=+2 | sd '」?#「?' ' ' | jq -R | jq -s | sd '^\s\s"null",' '  null,' | jq .
