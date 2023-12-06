@@ -1,0 +1,61 @@
+<head>
+<style>
+:root {
+  --bg:       #1a1b26;
+  --fg:       #ffffff;
+  --subfg:    rgba(256, 256, 256, 0.6);
+  --red:      #fb4934;
+  --blue:     #458588;
+  --green:    #b8bb26;
+  --purple:   #b16286;
+  --cyan:     #8ec07c;
+  --pink:     #a31a84;
+  --yellow:   #fabd2f;
+}
+
+code {
+  background: var(--bg);
+  color: white;
+  padding-left: 3px;
+  padding-right: 3px;
+}
+
+pre {
+  background: #1a1b26;
+  padding: 5px;
+}
+
+pre > code{
+  color: white;
+}
+</style>
+<head>
+<p>通过翻译原文产生的内容称为
+<i>翻译</i>(会用斜体标注),译者注释内容称为 <i>注释</i>(会用斜体标注)。<br />
+英文一律使用半角。<br />
+<i>翻译</i>中的符号一律使用全角(中文符号),<i>注释</i>中应使用半角(英文符号)。<br />
+破折号应为 <code>——</code>,翻译时可以用连字符 <code>-</code> 代替。<br />
+省略号应为 <code>……</code>,翻译时可以用 <code>...</code> 代替。<br />
+引号一律使用直角引号 <code>「」</code>  或 <code>『』</code>,翻译时可以使用 <code>“”</code> 或 <code>‘’</code> 代替。<br />
+原文中用到的一些特殊符号: <code>♪</code> <code>♥</code> <code>●●</code>。<br />
+天音线中的 <code>%f$ハート$;#00ffadd6;</code> 和 <code>%r</code> 是格式化代码,里面的内容保留即可。<br />
+原文中的 <code>\\n</code> 是换行符,请保留。
+原文中 <code>[]</code> 括起来的内容是上标,目前阶段先保留。<br />
+无论原文中用了多少个 <code>—</code> 或 <code>…</code> 一律改为两个(翻译可不用负责,可以使用正则统一修改),
+但请保留原文中 <code>…</code> 符号递减的用法。<br />
+例如:</p>
+<pre><code>"「………」",
+"「……」",
+"「…」",</code></pre>
+
+<p>原文中结尾无标点句应该补标点,非完整的句子可以不补标点。<br />
+例如:</p>
+<pre><code>"——（双手紧握）",</code></pre>
+
+<p>但是哪怕是只有语气词的句子也要补标点。<br />
+例如:</p>
+<pre><code>"「诶？」",
+"「……嗯。」",</code></pre>
+
+<p><i>翻译</i>的句子中不应有多余空格。<br />
+存疑的<i>翻译</i>会在开头使用 <code>@</code> 标注。</p>
